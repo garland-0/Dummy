@@ -132,11 +132,11 @@ function loadContent(newsId) {
             `;
             break;
         case 'news2':
-            heroImage.src = './path-to-hero-image-2.jpeg'; // Update hero image
+            heroImage.src = './publics/shop/shop2 copy_result.jpg'; // Update hero image
             content = `
                 <div class="blog-item">
                 <div class="blog-image-1">
-                    <img src="./publics/news/news-blog/.jpeg" alt="Blog Image 1">
+                    <img src="./publics/shop/hub_result.jpg" alt="Blog Image 1">
                 </div>
             </div>
             <div class="blog-item">
@@ -155,13 +155,13 @@ function loadContent(newsId) {
             </div>
             <div class="blog-item">
                 <div class="blog-image-1">
-                    <img src="./publics/news/news-blog/WhatsApp Image 2024-09-03 at 04.54.25 (1).jpeg" alt="Blog Image 2">
+                    <img src="./publics/shop/shop5.jpeg" alt="Blog Image 2">
                 </div>
             </div>
             `;
             break;
         case 'news3':
-            heroImage.src = './path-to-hero-image-2.jpeg'; // Update hero image
+            heroImage.src = './public/shop/shop5.jpeg'; // Update hero image
             content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
