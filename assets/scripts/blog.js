@@ -135,14 +135,29 @@ function loadContent(newsId) {
             heroImage.src = './path-to-hero-image-2.jpeg'; // Update hero image
             content = `
                 <div class="blog-item">
-                    <div class="blog-image-1">
-                        <img src="./path-to-image-2.jpeg" alt="Blog Image 2">
-                    </div>
-                    <div class="blog-text">
-                        <h2 class="blog-title-1">Injury Update</h2>
-                        <p class="blog-excerpt-1">Details about the injury update...</p>
-                    </div>
+                <div class="blog-image-1">
+                    <img src="./publics/news/news-blog/.jpeg" alt="Blog Image 1">
                 </div>
+            </div>
+            <div class="blog-item">
+                <div class="blog-text">
+                    <h2 class="blog-title-1">Welcome to Soy United Sports Hub,Your One-Stop Shop for Premium Sports Gear!</h2>
+                    <p class="blog-excerpt-1">we're passionate about empowering athletes of all levels with the best sports gear and equipment. Whether you're a seasoned pro or just starting out, we've got you covered with top-quality products for a wide range of sports. From footwear and apparel to accessories and equipment, we ensure you have everything you need to perform your best. Our extensive collection includes everything from running shoes and athletic wear to sports bags, training aids, and protective gear. We stock top brands across a variety of sports, including football, basketball, tennis, branding, fitness, and more</p>
+                </div>
+            </div>
+            <div class="blog-item">
+                <div class="blog-text">
+                    <p class="blog-excerpt-1">We’re committed to providing not only premium gear but also exceptional customer service. Our team of experts is always available to offer personalized recommendations, ensuring you find exactly what you need to elevate your game. Browse our collection today and discover how Soy United Sports Hub and branding can fuel your passion for sports!
+                        
+                        #SoyNiYetu #WillToWin
+                        </p>
+                </div>
+            </div>
+            <div class="blog-item">
+                <div class="blog-image-1">
+                    <img src="./publics/news/news-blog/WhatsApp Image 2024-09-03 at 04.54.25 (1).jpeg" alt="Blog Image 2">
+                </div>
+            </div>
             `;
             break;
         case 'news3':
@@ -349,28 +364,36 @@ function loadContent(newsId) {
                 `;
                 break;
                 case 'blog5':
-            heroImage.src = './WhatsApp Image 2024-09-03 at 04.53.49.jpeg'; // Update hero image
+            heroImage.src = './publics/foundation/blog-images/mathare1.jpeg'; // Update hero image
             content = `
             <div class="blog-item">
                 <div class="blog-image-1">
-                    <img src="./WhatsApp Image 2024-09-03 at 04.53.49 (1).jpeg" alt="Blog Image 1">
+                    <img src="./publics/foundation/blog-images/mathare2.jpeg">
                 </div>
             </div>
             <div class="blog-item">
                 <div class="blog-text">
-                    <h2 class="blog-title-1">New Training and Traveling Kits</h2>
-                    <p class="blog-excerpt-1">In a remarkable show of compassion and community support, Soy United FC recently extended its Corporate Social Responsibility (CSR) efforts with a visit to the Mathare Mental Hospital Maximum Security Unit. This impactful visit saw the team generously donating much-needed food supplies and sanitary materials to help sustain the unit, which plays a vital role in caring for patients dealing with serious mental health challenges.</p>
+                    <h2 class="blog-title-1">Soy United FC's Heartfelt CSR Initiative A Visit to Mathare Mental Hospital</h2>
+                    <p class="blog-excerpt-1">In a remarkable show of compassion and community support, Soy United FC recently extended its Corporate Social Responsibility (CSR) efforts with a visit to the Mathare Mental Hospital Maximum Security Unit. This impactful visit saw the team generously donating much-needed food supplies and sanitary materials to help sustain the unit, which plays a vital role in caring for patients dealing with serious mental health challenges.
+                    The Maximum Security Unit is a unique facility, housing inmates who are not only serving jail terms but also undergoing critical mental health treatment. This visit emphasized the hospital's essential mission of providing specialized care and rehabilitation to individuals in need, giving them hope for recovery and reintegration into society.
+                    
+                    </p>
                 </div>
             </div>
             <div class="blog-item">
                 <div class="blog-text">
-                    <p class="blog-excerpt-1">The Maximum Security Unit is a unique facility, housing inmates who are not only serving jail terms but also undergoing critical mental health treatment. This visit emphasized the hospital's essential mission of providing specialized care and rehabilitation to individuals in need, giving them hope for recovery and reintegration into society.
+                    <p class="blog-excerpt-1">
+                    Soy United FC expresses profound gratitude to the leadership of Mathare Mental Hospital for their warm welcome and partnership. We extend special appreciation to Madam Rose Muliro, head of the inmates' welfare affairs, Ms. Charity Zuma, assistant welfare officer, and Mr. Joseph Mwangangi, the mental health officer, for their dedication and guidance during this meaningful experience.
+
+                    Our commitment goes beyond the football field. By engaging in initiatives like this, we aim to not only support the community but also raise awareness about mental health, a cause close to our hearts. Together, we believe that every effort makes a difference, and we are proud to play our part in uplifting those in need.
+
+                    #SoyNiYetu #WillToWin #MentalHealthAwareness #CommunitySupport #CSRWithPurpose
                         </p>
                 </div>
             </div>
             <div class="blog-item">
                 <div class="blog-image-1">
-                    <img src="./WhatsApp Image 2024-09-03 at 04.54.25 (1).jpeg" alt="Blog Image 2">
+                    <img src="./publics/foundation/blog-images/mathare3.jpeg">
                 </div>
             </div>
             `;
