@@ -373,7 +373,7 @@ body {
 .hero-image {
   width: 100%;
   height: 70vh;
-  background-image: url('/public/news/group-3@2x.png');
+  background-image: url('https://res.cloudinary.com/dqhea9jnf/image/upload/v1725608091/group-3_2x_dynvss.png');
   background-size: cover;
   background-position: center;
   position: relative;
