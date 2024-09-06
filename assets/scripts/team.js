@@ -77,10 +77,10 @@ function loadPlayers(category) {
         playerFrame.style.animationDelay = `${index * 0.1}s`;
 
         const playerImage = document.createElement('img');
-        playerImage.src = `./public/team/team-profile/${category}/${player}`; // Updated to use local path
+        playerImage.src = `./publics/team/team-profile/${category}/${player}`; // Updated to use local path
         playerImage.alt = `${category} ${index + 1}`;
         playerImage.onerror = function() {
-            this.src = './public/shop3.jpg'; // Fallback to a placeholder image if the original image fails to load
+            this.src = './publics/shop3.jpg'; // Fallback to a placeholder image if the original image fails to load
         };
  
         const playerInfo = document.createElement('div');

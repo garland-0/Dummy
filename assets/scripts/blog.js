@@ -101,11 +101,11 @@ function loadContent(newsId) {
 
     switch (newsId) {
         case 'news1':
-            heroImage.src = './public/news/news-blog/WhatsApp Image 2024-09-03 at 04.53.49.jpeg'; // Update hero image
+            heroImage.src = './publics/news/news-blog/WhatsApp Image 2024-09-03 at 04.53.49.jpeg'; // Update hero image
             content = `
             <div class="blog-item">
                 <div class="blog-image-1">
-                    <img src="./public/news/news-blog/WhatsApp Image 2024-09-03 at 04.53.49 (1).jpeg" alt="Blog Image 1">
+                    <img src="./publics/news/news-blog/WhatsApp Image 2024-09-03 at 04.53.49 (1).jpeg" alt="Blog Image 1">
                 </div>
             </div>
             <div class="blog-item">
@@ -126,7 +126,7 @@ function loadContent(newsId) {
             </div>
             <div class="blog-item">
                 <div class="blog-image-1">
-                    <img src="./public/news/news-blog/WhatsApp Image 2024-09-03 at 04.54.25 (1).jpeg" alt="Blog Image 2">
+                    <img src="./publics/news/news-blog/WhatsApp Image 2024-09-03 at 04.54.25 (1).jpeg" alt="Blog Image 2">
                 </div>
             </div>
             `;
@@ -298,11 +298,11 @@ function loadContent(newsId) {
             break;
         
             case 'blog4':
-                heroImage.src = './public/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.15.55 AM.jpeg'; // Update hero image
+                heroImage.src = './publics/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.15.55 AM.jpeg'; // Update hero image
                 content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
-                        <img src="./public/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.19.21 AM.jpeg" alt="Blog Image 1">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.19.21 AM.jpeg" alt="Blog Image 1">
                     </div>
                 </div>
                 <div class="blog-item">
@@ -320,12 +320,12 @@ function loadContent(newsId) {
                 </div>
                 <div class="blog-item">
                     <div class="blog-image-1">
-                        <img src="./public/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.15.51 AM.jpeg" alt="Blog Image 2">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.15.51 AM.jpeg" alt="Blog Image 2">
                     </div>
                 </div>
                 <div class="blog-item">
                     <div class="blog-image-1">
-                        <img src="./public/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.15.57 AM.jpeg" alt="Blog Image 1">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.15.57 AM.jpeg" alt="Blog Image 1">
                     </div>
                 </div>
                 <div class="blog-item">
@@ -342,7 +342,7 @@ function loadContent(newsId) {
                 </div>
                 <div class="blog-item">
                     <div class="blog-image-1">
-                        <img src="./public/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.19.22 AM.jpeg" alt="Blog Image 2">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.19.22 AM.jpeg" alt="Blog Image 2">
                     </div>
                 </div>
 
