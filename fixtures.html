@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soy United Foundation</title>
+    <link href=./assets/index.css rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/82aa6b50c1b6e9312181faa59397eff4?family=Chelsea+Chiselled" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+     
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="top-header">
+                <div class="foundation-name">SOY UNITED FOUNDATION</div>
+                <div class="foundation-motto">HELP ONE TO HELP ANOTHER</div>
+            </div>
+            <div class="header-divider"></div>
+            <div class="bottom-header">
+                <div class="logo-placeholder-3"><img src="./public/team/logo-2@2x.png" alt="logo"></div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="team.html" class="nav-link">LATEST NEWS</a>
+                        </li>
+                        <li class="nav-item"><a href="team.html" class="nav-link">TEAM</a></li>
+                        <li class="nav-item"><a href="shop.html" class="nav-link">SHOP</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">FIXTURES</a></li>
+                        <li class="nav-item"><a href="history.html" class="nav-link">HISTORY</a></li>
+                        <li class="nav-item"><a href="foundation.html" class="nav-link">FOUNDATION</a></li>
+                        <li id="copy"><a href="#" class="nav-link"></a>&copy; 2023 Soy United Football Club</li>
+                    </ul>
+                </nav>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <img src="./public/news/group-3@2x.png" alt="Hero Image" class="hero-image">
+    <button id="contactButton" class="contact-button">Feedback</button>
+    <div class="container">
+        <div class="toggle-buttons">
+            <button class="toggle-button active" data-target="main-content">League Table</button>
+            <button class="toggle-button" data-target="fixtures-container">Fixtures</button>
+        </div>
+        <div class="main-content active">
+            <section>
+                <h2>Division One League Table</h2>
+                <div class="league-table-container">
+                    <table class="league-table" id="leagueTable">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th id="team"></th>
+                                <th>P</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>GF</th>
+                                <th>GA</th>
+                                <th>GD</th>
+                                <th>Pts</th>
+                                <th>Last 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Table rows will be added here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <button class="expand-table-button" id="expandTableButton">Full table</button>
+            </section>
+        </div>
+        <section class="fixtures-container">
+            <h2>Upcoming Fixtures</h2>
+            <div class="fixtures-scroll" id="fixturesScroll">
+                <!-- Fixtures will be added here by JavaScript -->
+            </div>
+            <div class="calendar-container">
+                <div class="calendar">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="7">April 2023</th>
+                            </tr>
+                            <tr>
+                                <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr>
+                            <tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr>
+                            <tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+                            <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr>
+                            <tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr>
+                            <tr><td>30</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contactPopup" class="contact-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Send Feedback</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Feedback" required></textarea>
+                <button type="submit">Send Feedback</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Fixture data
+        const fixtures = [
+            { date: '2023-04-20', time: '19:45', home: 'Chelsea', away: 'Manchester United', venue: 'Stamford Bridge' },
+            { date: '2023-04-25', time: '20:00', home: 'Arsenal', away: 'Chelsea', venue: 'Emirates Stadium' },
+            { date: '2023-04-30', time: '16:30', home: 'Chelsea', away: 'Liverpool', venue: 'Stamford Bridge' },
+            { date: '2023-05-05', time: '17:30', home: 'Manchester City', away: 'Chelsea', venue: 'Etihad Stadium' },
+            { date: '2023-05-10', time: '20:00', home: 'Chelsea', away: 'Tottenham', venue: 'Stamford Bridge' },
+            { date: '2023-05-15', time: '15:00', home: 'Everton', away: 'Chelsea', venue: 'Goodison Park' },
+        ];
+
+        // League table data
+        let leagueData = [
+            { pos: 1, team: 'Manchester City', p: 32, w: 23, d: 4, l: 5, gf: 70, ga: 25, gd: 45, pts: 73, form: 'WWDWL' },
+            { pos: 2, team: 'Arsenal', p: 32, w: 22, d: 5, l: 5, gf: 65, ga: 25, gd: 40, pts: 71, form: 'WWWLD' },
+            { pos: 3, team: 'Liverpool', p: 32, w: 20, d: 7, l: 5, gf: 68, ga: 30, gd: 38, pts: 67, form: 'DWWWW' },
+            { pos: 4, team: 'Chelsea', p: 32, w: 19, d: 6, l: 7, gf: 55, ga: 25, gd: 30, pts: 63, form: 'WDWLW' },
+            { pos: 5, team: 'Tottenham', p: 32, w: 18, d: 5, l: 9, gf: 55, ga: 30, gd: 25, pts: 59, form: 'LWWLD' },
+            { pos: 6, team: 'Manchester United', p: 32, w: 17, d: 6, l: 9, gf: 50, ga: 30, gd: 20, pts: 57, form: 'WLWDW' },
+            { pos: 7, team: 'West Ham', p: 32, w: 15, d: 7, l: 10, gf: 45, ga: 35, gd: 10, pts: 52, form: 'DWLWL' },
+            { pos: 8, team: 'Leicester City', p: 32, w: 13, d: 8, l: 11, gf: 40, ga: 35, gd: 5, pts: 47, form: 'LDWDW' },
+            { pos: 9, team: 'Wolves', p: 32, w: 12, d: 5, l: 15, gf: 30, ga: 35, gd: -5, pts: 41, form: 'LLWDL' },
+            { pos: 10, team: 'Aston Villa', p: 32, w: 11, d: 5, l: 16, gf: 35, ga: 43, gd: -8, pts: 38, form: 'WLLWD' },
+            { pos: 11, team: 'Everton', p: 32, w: 10, d: 6, l: 16, gf: 33, ga: 46, gd: -13, pts: 36, form: 'LWDLL' },
+            { pos: 12, team: 'Newcastle', p: 32, w: 9, d: 8, l: 15, gf: 34, ga: 48, gd: -14, pts: 35, form: 'DLWLD' },
+            { pos: 13, team: 'Crystal Palace', p: 32, w: 8, d: 9, l: 15, gf: 31, ga: 45, gd: -14, pts: 33, form: 'LDDWL' },
+            { pos: 14, team: 'Southampton', p: 32, w: 7, d: 10, l: 15, gf: 32, ga: 52, gd: -20, pts: 31, form: 'LDLWD' },
+            { pos: 15, team: 'Brighton', p: 32, w: 7, d: 9, l: 16, gf: 28, ga: 47, gd: -19, pts: 30, form: 'DLLDW' },
+        ];
+
+        // Function to populate fixtures
+        function populateFixtures() {
+            const fixturesContainer = document.getElementById('fixturesScroll');
+            fixtures.forEach(fixture => {
+                const fixtureElement = document.createElement('div');
+                fixtureElement.classList.add('fixture');
+                fixtureElement.innerHTML = `
+                    <div class="fixture-date">${new Date(fixture.date).toLocaleDateString('en-GB', { month: 'short', day: 'numeric' })}</div>
+                    <div class="fixture-time">${fixture.time}</div>
+                    <div class="fixture-teams">${fixture.home} vs ${fixture.away}</div>
+                    <div class="fixture-venue">${fixture.venue}</div>
+                `;
+                fixturesContainer.appendChild(fixtureElement);
+            });
+        }
+
+        // Function to populate league table
+        function populateLeagueTable() {
+            console.log("Populating league table");
+            const tableBody = document.querySelector('#leagueTable tbody');
+            if (!tableBody) {
+                console.error("Table body not found");
+                return;
+            }
+            tableBody.innerHTML = '';
+            leagueData.forEach(team => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="numeric">${team.pos}</td>
+                    <td class="team-name">
+                        <img src="./public/team/logo-2@2x.png?text=${team.team[0]}" alt="${team.team} logo" class="team-logo">
+                        <span>${team.team}</span>
+                    </td>
+                    <td class="numeric ">${team.p}</td>
+                    <td class="numeric">${team.w}</td>
+                    <td class="numeric">${team.d}</td>
+                    <td class="numeric">${team.l}</td>
+                    <td class="numeric">${team.gf}</td>
+                    <td class="numeric">${team.ga}</td>
+                    <td class="numeric">${team.gd}</td>
+                    <td class="numeric">${team.pts}</td>
+                    <td>${team.form}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+            console.log("Table populated with", leagueData.length, "rows");
+        }
+
+        // Function to update league data
+        function updateLeagueData(teamName, field, value) {
+            const team = leagueData.find(t => t.team === teamName);
+            if (team) {
+                team[field] = value;
+                // Recalculate points and goal difference
+                team.pts = team.w * 3 + team.d;
+                team.gd = team.gf - team.ga;
+                // Sort table by points, then goal difference
+                leagueData.sort((a, b) => b.pts - a.pts || b.gd - a.gd);
+                // Update positions
+                leagueData.forEach((t, index) => t.pos = index + 1);
+                populateLeagueTable();
+            }
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("DOM content loaded");
+            populateFixtures();
+            populateLeagueTable();
+
+            // Toggle functionality for sections
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.getAttribute('data-target');
+                    const targetElement = document.querySelector(`.${targetId}`);
+                    
+                    document.querySelectorAll('.main-content, .fixtures-container').forEach(el => el.classList.remove('active'));
+                    toggleButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    targetElement.classList.add('active');
+                    button.classList.add('active');
+                });
+            });
+
+            // Expand table functionality
+            const expandTableButton = document.getElementById('expandTableButton');
+            const leagueTable = document.getElementById('leagueTable');
+            
+            expandTableButton.addEventListener('click', () => {
+                leagueTable.classList.toggle('expanded');
+                expandTableButton.textContent = leagueTable.classList.contains('expanded') ? 'Show Less Columns' : 'Show All Columns';
+                
+                const allColumns = leagueTable.querySelectorAll('th, td');
+                allColumns.forEach(column => {
+                    column.style.display = leagueTable.classList.contains('expanded') ? 'table-cell' : '';
+                });
+            });
+
+            // Contact form popup functionality
+            const contactButton = document.getElementById('contactButton');
+            const contactPopup = document.getElementById('contactPopup');
+            const closePopup = document.querySelector('.close-popup');
+            const contactForm = document.getElementById('contactForm');
+
+            contactButton.addEventListener('click', () => {
+                contactPopup.style.display = 'block';
+            });
+
+            closePopup.addEventListener('click', () => {
+                contactPopup.style.display = 'none';
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === contactPopup) {
+                    contactPopup.style.display = 'none';
+                }
+            });
+
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                fetch('http://localhost:3000/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, message }),
+                })
+                .then(response => response.text())
+                .then(result => {
+                    alert('Thank you for your feedback. We will get back to you soon!');
+                    contactPopup.style.display = 'none';
+                    contactForm.reset();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('There was an error sending your feedback. Please try again later.');
+                });
+            });
+        });
+
+        // Example usage of updateLeagueData
+        // updateLeagueData('Chelsea', 'w', 20);
+
+
+        /* HEADER */
+const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+
+        function toggleMenu() {
+            navMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+            hamburgerIcon.classList.toggle('open');
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                hamburgerIcon.classList.remove('open');
+            });
+        });
+
+        // Add animation to menu items
+        function addFadeInClass() {
+            if (window.innerWidth <= 768) {
+                navLinks.forEach((link, index) => {
+                    link.parentElement.style.transitionDelay = `${index * 0.1}s`;
+                });
+            } else {
+                navLinks.forEach(link => {
+                    link.parentElement.style.transitionDelay = '';
+                });
+            }
+        }
+
+        window.addEventListener('resize', addFadeInClass);
+        addFadeInClass();
+
+        // Add this to your existing <style> tag
+        const style = document.createElement('style');
+        style.textContent = `
+            .menu-open {
+                overflow: hidden;
+            }
+
+            @media screen and (min-width: 769px) {
+                .nav-menu {
+                    display: flex !important;
+                }
+                .hamburger {
+                    display: none !important;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
