@@ -380,6 +380,9 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  
+}
+.hero-overlay p{
   color: white;
   font-size: 3rem;
   font-weight: bold;
