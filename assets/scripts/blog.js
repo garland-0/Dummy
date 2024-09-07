@@ -67,11 +67,11 @@ function loadContent(newsId) {
             `;
             break;
         case 'news2':
-            heroImage.src = './publics/shop/shop2 copy_result.jpg'; // Update hero image
+            heroImage.src = './publics/shop/shop2 copy.jpg'; // Update hero image
             content = `
                 <div class="blog-item">
                 <div class="blog-image-1">
-                    <img src="./publics/shop/hub_result.jpg" alt="Blog Image 1">
+                    <img src="./publics/shop/hub.jpg" alt="Blog Image 1">
                 </div>
             </div>
             <div class="blog-item">
