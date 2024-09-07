@@ -157,7 +157,7 @@ const items = [
     { id: 'Arsenal', category: 'JERSEY', image: './publics/shop-photos/jersey/arsenal-branded.jpg?width=300&height=300&format=webp' },
     { id: 'Arsenal ', category: 'JERSEY', image: './publics/shop-photos/jersey/arsenal-jersey.jpg?width=300&height=300&format=webp' },
     { id: 'Arsenal', category: 'JERSEY', image: './publics/shop-photos/jersey/arsenal-third.jpg?width=300&height=300&format=webp' },
-    { id: 'Soy United', category: 'JERSEY', image: './publics/shop-photos/jersey/soy-branded-pink.jpg?width=300&height=300&format=webp' },
+    /* { id: 'Soy United', category: 'JERSEY', image: './publics/shop-photos/jersey/soy-branded-pink.jpg?width=300&height=300&format=webp' }, */
     { id: 'Soy United', category: 'JERSEY', image: './publics/shop-photos/jersey/soy-branded.jpg?width=300&height=300&format=webp' },
     { id: 'Soy United', category: 'JERSEY', image: './publics/shop-photos/jersey/soy-united-branded.jpg?width=300&height=300&format=webp' },
     { id: 'Soy United ', category: 'JERSEY', image: './publics/shop-photos/jersey/soy-united-home.jpg?width=300&height=300&format=webp' },
