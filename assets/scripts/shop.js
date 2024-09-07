@@ -195,7 +195,7 @@ const items = [
 
 
 
-    { id: 'Socks', category: 'SOCKS', image: './publics/shop-photos/socks/collection.jpg.jpg?width=300&height=300&format=webp' },
+    { id: 'Socks', category: 'SOCKS', image: './publics/shop-photos/socks/collection.jpg?width=300&height=300&format=webp' },
     { id: 'Socks', category: 'SOCKS', image: './publics/shop-photos/socks/socks-2.jpg?width=300&height=300&format=webp' },
     { id: 'Socks', category: 'SOCKS', image: './publics/shop-photos/socks/socks-3.jpg?width=300&height=300&format=webp' },
     { id: 'Socks', category: 'SOCKS', image: './publics/shop-photos/socks/socks-5.jpg?width=300&height=300&format=webp' },
