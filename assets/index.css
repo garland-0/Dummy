@@ -3,7 +3,7 @@
   --secondary-color: #001165;
   --accent-color:  #00fffb;
   --accent-color2: rgb(224, 112, 0);
-  --background-color: hsl(0, 0%, 100%);
+  --background-color: hsl(0, 0%, 96%);
   --text-color: #ffffff;
   --text-color2: black;
   --bg-color: #ffffff;
@@ -42,7 +42,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.2rem;
-  margin-top: 0.5rem;
 }
 
 .foundation-name, .foundation-motto {

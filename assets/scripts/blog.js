@@ -154,97 +154,141 @@ function loadContent(newsId) {
 
             //BLOG
         case 'blog1':
-            heroImage.src = './WhatsApp Image 2024-09-03 at 04.53.49.jpg'; // Update hero image
+            heroImage.src = './publics/foundation/blog-images/WhatsApp Image 2024-08-18 at 06.22.57 (1).jpeg'; // Update hero image
             content = `
-            <div class="blog-item">
-                <div class="blog-image-1">
-                    <img src="./WhatsApp Image 2024-09-03 at 04.53.49 (1).jpg" alt="Blog Image 1">
-                </div>
-            </div>
-            <div class="blog-item">
-                <div class="blog-text">
-                    <h2 class="blog-title-1">New Training and Traveling Kits</h2>
-                    <p class="blog-excerpt-1">We are beyond excited to unveil our latest additions to the SOY United FC family—the official training and traveling kits for the 2024/25 season! These new kits represent a fresh chapter in our journey, designed to provide our players and staff with the highest quality, comfort, and style. As we gear up for another thrilling season, these kits will not only enhance performance but also embody the spirit and identity of our club. Partnering with SOY United Sports Hub, our official shirt partner, we have crafted these kits to meet the rigorous demands of our training sessions while ensuring our team looks sharp on the go.</p>
-                </div>
-            </div>
-            <div class="blog-item">
-                <div class="blog-text">
-                    <p class="blog-excerpt-1">Whether on the pitch or traveling to our next big match, our team will be sporting the best, thanks to this incredible partnership.
-
-                        Stay tuned for more updates as we continue to prepare for the season ahead. We can't wait to see our players in action, representing SOY United FC with pride and determination. Remember, with the #WillToWin, we are unstoppable!
-                        
-                        #SoyNiYetu #WillToWin
-                        </p>
-                </div>
-            </div>
-            <div class="blog-item">
-                <div class="blog-image-1">
-                    <img src="./WhatsApp Image 2024-09-03 at 04.54.25 (1).jpg" alt="Blog Image 2">
-                </div>
-            </div>
-            `;
-            break;
-            case 'blog2':
-                heroImage.src = './WhatsApp Image 2024-09-03 at 04.53.49.jpg'; // Update hero image
-                content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
-                        <img src="./WhatsApp Image 2024-09-03 at 04.53.49 (1).jpg" alt="Blog Image 1">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-08-18 at 06.22.56.jpg" alt="Blog Image 1">
                     </div>
                 </div>
                 <div class="blog-item">
                     <div class="blog-text">
-                        <h2 class="blog-title-1">New Training and Traveling Kits</h2>
-                        <p class="blog-excerpt-1">We are beyond excited to unveil our latest additions to the SOY United FC family—the official training and traveling kits for the 2024/25 season! These new kits represent a fresh chapter in our journey, designed to provide our players and staff with the highest quality, comfort, and style. As we gear up for another thrilling season, these kits will not only enhance performance but also embody the spirit and identity of our club. Partnering with SOY United Sports Hub, our official shirt partner, we have crafted these kits to meet the rigorous demands of our training sessions while ensuring our team looks sharp on the go.</p>
+                        <h2 class="blog-title-1"> Soy United FC: Leading the Way in Community Service and Environmental Stewardship</h2>
+                        <p class="blog-excerpt-1">At Soy United FC, we believe in more than just excellence on the football field. Our mission extends far beyond sports, as we strive to make a positive impact in our community and raise awareness about critical issues like environmental sustainability and social responsibility. Recently, our team embarked on a meaningful journey, visiting key locations to engage in activities that uplift the community and promote environmental consciousness.
                     </div>
                 </div>
                 <div class="blog-item">
                     <div class="blog-text">
-                        <p class="blog-excerpt-1">Whether on the pitch or traveling to our next big match, our team will be sporting the best, thanks to this incredible partnership.
-    
-                            Stay tuned for more updates as we continue to prepare for the season ahead. We can't wait to see our players in action, representing SOY United FC with pride and determination. Remember, with the #WillToWin, we are unstoppable!
-                            
-                            #SoyNiYetu #WillToWin
+                        <p class="blog-excerpt-1">Community Outreach: A Heartfelt Mission<br>
+                        As part of our community outreach program, Soy United FC visited Likuyani Hospital, Soy Market, and Nangili Market. These visits were more than just gestures of goodwill; they were opportunities for us to connect with the people who support our club and to give back in a tangible way. At the hospital, our players spent time encouraging the sick, offering words of hope and support to those in need of comfort. In addition, we donated essential items to help improve their well-being during challenging times.
+                    </p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-08-18 at 06.22.56 (3).jpg" alt="Blog Image 2">
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-08-18 at 06.22.56 (2).jpg" alt="Blog Image 1">
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <p class="blog-excerpt-1">In line with our core values, Soy United FC has proudly taken on the role of an environmentally conscious football club. During our visits to the local markets, we rolled up our sleeves and conducted a community clean-up at both Soy Market and Nangili Market. Our goal was simple but powerful: to raise awareness about the importance of maintaining clean public spaces and to inspire others to join us in the fight against pollution.
+
+                        Soy United FC is more than just a football team—we are a green club dedicated to environmental preservation and climate action. Our clean-up efforts reflect our deep commitment to protecting the environment and advocating for sustainable practices. By taking these small yet impactful steps, we hope to contribute to a cleaner, healthier planet for future generations.</p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <p class="blog-excerpt-1">Our mission doesn't end here. We are calling on everyone—fans, community members, and fellow sports teams—to join us in making a difference. Whether through simple acts of kindness or taking part in environmental initiatives, we can all play a role in building a better world. Soy United FC will continue to lead by example, championing the causes that matter most and demonstrating that true greatness lies in service to others and the planet.
+
+                        Together, let's embrace the power of  sports, community, and sustainability  to create lasting change!
+
                             </p>
                     </div>
                 </div>
                 <div class="blog-item">
                     <div class="blog-image-1">
-                        <img src="./WhatsApp Image 2024-09-03 at 04.54.25 (1).jpg" alt="Blog Image 2">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-08-18 at 06.22.56 (1).jpg" alt="Blog Image 2">
+                    </div>
+                </div>
+                `;
+            break;
+            case 'blog2':
+                heroImage.src = './publics/foundation/blog-images/Orphanage4.jpeg'; // Update hero image
+                content = `
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./publics/foundation/blog-images/Orphanage1.jpg" alt="Blog Image 1">
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <h2 class="blog-title-1">Soy United FC: Spreading Love and Hope at Harvest of Hope Africa Orphanage</h2>
+                        <p class="blog-excerpt-1">Mother Teresa, one of the world's greatest humanitarians, once said, _"It's not how much we give but how much love we put into giving."_ This powerful message perfectly reflects our values at Soy United FC, where we believe in the importance of not just giving, but giving with heart and purpose. Guided by our motto, _“Help One To Help Another,”_ we had the incredible opportunity to visit the Harvest of Hope Africa Orphanage (HOHA) in Matayos, Busia County  this past Saturday.Our visit to Harvest of Hope Africa  was not just about donations, but about creating meaningful connections with the children who call this place home. These resilient young souls, who have faced so many challenges in life, welcomed us with open arms and bright smiles. We spent the day engaging in fun activities, sharing stories, and offering words of encouragement and love. The joy and laughter shared that day will forever remain in our hearts..</p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <p class="blog-excerpt-1">At Soy United FC, we recognize the importance of nurturing the next generation—not only on the football field but in life. During our visit, we were able to provide essential supplies to help meet the daily needs of the children. From food items to clothing and educational materials, these donations are just one small way we can help ensure that these young ones have the resources they need to thrive.
+                        However, the work doesn't end here. The children of **Harvest of Hope Africa** need continued support, and we encourage anyone who is able to contribute to this noble cause. Whether it’s through donations, volunteering, or simply spreading the word, every little bit makes a difference in the lives of these children. You can get in touch with HOHA's founder, Mr. Fredrick Munuku** at 0705814936  to learn how you can help.
+                        At Soy United FC, we believe in using our platform not only to excel in sports but also to make a meaningful impact in our community. Our visit to the orphanage is a testament to our commitment to uplifting the vulnerable, spreading love, and fostering hope wherever we can. 
+
+                        #SoyNiYetu #WillToWin #GivingBack #HopeForTheFuture
+
+                            </p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./publics/foundation/blog-images/Orphanage5.jpg" alt="Blog Image 2">
                     </div>
                 </div>
                 `;
                 break;
         case 'blog3':
-            heroImage.src = './WhatsApp Image 2024-09-03 at 04.53.49.jpg'; // Update hero image
+            heroImage.src = './publics/foundation/blog-images/WhatsApp Image 2024-08-13 at 23.09.00 (1).jpeg'; // Update hero image
             content = `
-            <div class="blog-item">
-                <div class="blog-image-1">
-                    <img src="./WhatsApp Image 2024-09-03 at 04.53.49 (1).jpg" alt="Blog Image 1">
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-08-13 at 23.09.00 (2).jpg" alt="Blog Image 1">
+                    </div>
                 </div>
-            </div>
-            <div class="blog-item">
-                <div class="blog-text">
-                    <h2 class="blog-title-1">New Training and Traveling Kits</h2>
-                    <p class="blog-excerpt-1">We are beyond excited to unveil our latest additions to the SOY United FC family—the official training and traveling kits for the 2024/25 season! These new kits represent a fresh chapter in our journey, designed to provide our players and staff with the highest quality, comfort, and style. As we gear up for another thrilling season, these kits will not only enhance performance but also embody the spirit and identity of our club. Partnering with SOY United Sports Hub, our official shirt partner, we have crafted these kits to meet the rigorous demands of our training sessions while ensuring our team looks sharp on the go.</p>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <h2 class="blog-title-1"> Soy United Community Open Tournament: A Celebration of Talent, Teamwork, and Triumph</h2>
+                        <p class="blog-excerpt-1">We are thrilled to announce the successful completion of the Soy United Community Open Tournament, an exciting event that brought together young athletes from all corners of Likuyani Sub-County and beyond. This tournament was not just a competition; it was a celebration of unity, sportsmanship, and the boundless potential of our youth. This year, we proudly opened the tournament to both boys' and girls' teams, ensuring that everyone had the chance to showcase their talent and passion for the beautiful game. The Ivugwi Grounds in Soy became a hub of energy, determination, and camaraderie as teams from various regions came together to compete and connect.
+</p>
+                    </div>
                 </div>
-            </div>
-            <div class="blog-item">
-                <div class="blog-text">
-                    <p class="blog-excerpt-1">Whether on the pitch or traveling to our next big match, our team will be sporting the best, thanks to this incredible partnership.
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <p class="blog-excerpt-1">At Soy United, we believe in giving back to the community. In the spirit of this belief, we donated brand-new jerseys to all participating teams, ensuring every player had the gear they needed to step onto the pitch with confidence. In addition, we supported our female athletes by providing sanitary pads, recognizing the importance of addressing their needs both on and off the field.
+                    </p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-08-13 at 23.09.03 (1).jpg" alt="Blog Image 2">
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-08-13 at 23.09.02.jpg" alt="Blog Image 1">
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <p class="blog-excerpt-1">The tournament was filled with incredible performances, and we were proud to reward the best of the best with trophies, cash prizes, and special recognition. These tokens of appreciation were given to inspire our young players to continue pursuing their passion and to celebrate their dedication and hard work.</p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <p class="blog-excerpt-1">One of the most rewarding aspects of this event was the discovery of new talent. We are excited to announce that several standout players have been invited to join Soy United FC, where they will have the opportunity to hone their skills and compete at a higher level. The Soy United Community Open Tournament was a huge success, and it left a lasting impact on everyone involved. We are already looking forward to next year's event, where we hope to continue building a brighter future for our youth through the power of sports.
 
-                        Stay tuned for more updates as we continue to prepare for the season ahead. We can't wait to see our players in action, representing SOY United FC with pride and determination. Remember, with the #WillToWin, we are unstoppable!
-                        
-                        #SoyNiYetu #WillToWin
-                        </p>
+                        Stay tuned for more updates as we continue to uplift, inspire, and empower our community!
+                            </p>
+                    </div>
                 </div>
-            </div>
-            <div class="blog-item">
-                <div class="blog-image-1">
-                    <img src="./WhatsApp Image 2024-09-03 at 04.54.25 (1).jpg" alt="Blog Image 2">
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./publics/foundation/blog-images/WhatsApp Image 2024-08-13 at 23.09.00 (3).jpg" alt="Blog Image 2">
+                    </div>
                 </div>
-            </div>
-            `;
+                `;
             break;
         
             case 'blog4':
