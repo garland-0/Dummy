@@ -218,9 +218,9 @@ const items = [
 
     { id: 'Hood', category: 'HOODS', image: './publics/shop-photos/hoods/hood.jpg?width=300&height=300&format=webp' },
     
-    { id: 'Hats', category: 'HATS', image: './publics/shop-photos/hats/Hat-1.jpg?width=300&height=300&format=webp' },
-    { id: 'Hats', category: 'HATS', image: './publics/shop-photos/hats/Hat-2.jpg?width=300&height=300&format=webp' },
     { id: 'Hats', category: 'HATS', image: './publics/shop-photos/hats/Hat-3.jpg?width=300&height=300&format=webp' },
+    { id: 'Hats', category: 'HATS', image: './publics/shop-photos/hats/Hat-2.jpg?width=300&height=300&format=webp' },
+    { id: 'Hats', category: 'HATS', image: './publics/shop-photos/hats/Hat-2.jpg?width=300&height=300&format=webp' },
 
     { id: 'Gloves', category: 'GLOVES', image: './publics/shop-photos/gloves/Gloves.jpg?width=300&height=300&format=webp' },
     { id: 'Gloves', category: 'GLOVES', image: './publics/shop-photos/gloves/Gloves-2.jpg?width=300&height=300&format=webp' },
