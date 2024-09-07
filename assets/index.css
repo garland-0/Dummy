@@ -1579,6 +1579,7 @@ h1, h2 {
   transform: rotate(-90deg);
   transform-origin: bottom right;
   transition: right 0.3s ease;
+  display: none;
 }
 
 .contact-button:hover {
