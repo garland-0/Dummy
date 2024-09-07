@@ -2372,7 +2372,7 @@ video {
 .blog-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0px;
+  gap: 10px;
 }
 
 .blog-item {
