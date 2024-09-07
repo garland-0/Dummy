@@ -65,7 +65,7 @@ const playerData = {
             goalkeepers: ['KAUNDA.jpg', 'MONIO.jpg'],
             defenders: ['OJOK.jpg', 'OKWEMBA.jpg', 'ELVIS.jpg', 'OSOI.jpg', 'WANYAMA.jpg'],
             midfielders: [ 'BARAZA.jpg', 'EMMANUEL.jpg', 'KISINO.jpg', 'LUTTA.jpg', 'MAZA.jpg', 'ODIRA.jpg', 'ONDEKO.jpg', 'OSCAR.jpg', 'OUMA.jpg'],
-            strikers: ['DEDAN.jpg', 'MASAFU.jpg', 'OKELLO.jpg', 'NZEI.JPG', 'SHAMALA.jpg', 'WANGAI.jpg'],
+            strikers: ['DEDAN.jpg', 'MASAFU.jpg', 'OKELLO.jpg', 'NZEI.jpg', 'SHAMALA.jpg', 'WANGAI.jpg'],
             staff: [ 'EDWIN.jpg', 'BONDIA.jpg', 'ISAAC.jpg', 'PAUL.jpg', 'ATINDI.jpg']
 };
 
