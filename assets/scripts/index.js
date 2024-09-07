@@ -3,9 +3,9 @@
 /* VIDEO-SECTION */
 
 const videos = [
-    { id: 'M7lc1UVf-VE', title: 'bkcbKJBkjc' },
-    { id: 'kJQP7kiw5Fk', title: 'New workout', description: 'hbkacbsjshbckasjbc' },
-    { id: 'JGwWNGJdvx8', title: 'New goals', description: 'Training' }
+    { id: 'M7lc1UVf-VE', title: 'Latest video' },
+    { id: 'kJQP7kiw5Fk', title: 'New workout', description: 'training' },
+    
 ];
 
 let currentVideoIndex = 0;
