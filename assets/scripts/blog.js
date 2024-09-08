@@ -1,29 +1,31 @@
 
 
 //BLOG
-// JavaScript for animations and dynamic content loading
 document.addEventListener('DOMContentLoaded', () => {
     const heroImage = document.querySelector('.hero img');
     const blogItems = document.querySelectorAll('.blog-item');
+    let ticking = false; 
 
-    // Parallax effect for hero image
-    window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        heroImage.style.transform = `translateY(${scrolled * 0.5}px)`;
-    });
+    const onScroll = () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const scrolled = window.scrollY;
+                heroImage.style.transform = `translateY(${scrolled * 0.5}px)`;
+                ticking = false; 
+            });
+            ticking = true; 
+        }
+    };
 
-    // Create an IntersectionObserver instance
+    window.addEventListener('scroll', onScroll);
+
+   
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('reveal'); // Add the 'reveal' class when the element is in view
-            } else {
-                entry.target.classList.remove('reveal'); // Optionally remove the class when out of view
-            }
+            entry.target.classList.toggle('reveal', entry.isIntersecting); 
         });
     }, { threshold: 0.1 });
 
-    // Observe each blog item
     blogItems.forEach(item => {
         observer.observe(item);
     });
@@ -67,7 +69,7 @@ function loadContent(newsId) {
             `;
             break;
         case 'news2':
-            heroImage.src = './publics/shop/shop2 copy.jpg'; // Update hero image
+            heroImage.src = './publics/shop/shop2 copy.jpg'; 
             content = `
                 <div class="blog-item">
                 <div class="blog-image-1">
@@ -82,7 +84,7 @@ function loadContent(newsId) {
             </div>
             <div class="blog-item">
                 <div class="blog-text">
-                    <p class="blog-excerpt-1">We’re committed to providing not only premium gear but also exceptional customer service. Our team of experts is always available to offer personalized recommendations, ensuring you find exactly what you need to elevate your game. Browse our collection today and discover how Soy United Sports Hub and branding can fuel your passion for sports!
+                    <p class="blog-excerpt-1">We're committed to providing not only premium gear but also exceptional customer service. Our team of experts is always available to offer personalized recommendations, ensuring you find exactly what you need to elevate your game. Browse our collection today and discover how Soy United Sports Hub and branding can fuel your passion for sports!
                         
                         #SoyNiYetu #WillToWin
                         </p>
@@ -96,7 +98,7 @@ function loadContent(newsId) {
             `;
             break;
         case 'news3':
-            heroImage.src = './public/shop/shop5.jpg'; // Update hero image
+            heroImage.src = './public/shop/shop5.jpg'; 
             content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
@@ -110,7 +112,7 @@ function loadContent(newsId) {
             `;
             break;
         case 'news4':
-            heroImage.src = './path-to-hero-image-2.jpg'; // Update hero image
+            heroImage.src = './path-to-hero-image-2.jpg'; 
             content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
@@ -124,7 +126,7 @@ function loadContent(newsId) {
             `;
             break;
         case 'news5':
-            heroImage.src = './path-to-hero-image-2.jpg'; // Update hero image
+            heroImage.src = './path-to-hero-image-2.jpg'; 
             content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
@@ -138,7 +140,7 @@ function loadContent(newsId) {
             `;
             break;
         case 'news6':
-            heroImage.src = './path-to-hero-image-2.jpg'; // Update hero image
+            heroImage.src = './path-to-hero-image-2.jpg';
             content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
@@ -154,7 +156,7 @@ function loadContent(newsId) {
 
             //BLOG
         case 'blog1':
-            heroImage.src = './publics/foundation/blog-images/WhatsApp Image 2024-08-18 at 06.22.57 (1).jpeg'; // Update hero image
+            heroImage.src = './publics/foundation/blog-images/WhatsApp Image 2024-08-18 at 06.22.57 (1).jpeg';
             content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
@@ -170,7 +172,7 @@ function loadContent(newsId) {
                 <div class="blog-item">
                     <div class="blog-text">
                         <p class="blog-excerpt-1">Community Outreach: A Heartfelt Mission<br>
-                        As part of our community outreach program, Soy United FC visited Likuyani Hospital, Soy Market, and Nangili Market. These visits were more than just gestures of goodwill; they were opportunities for us to connect with the people who support our club and to give back in a tangible way. At the hospital, our players spent time encouraging the sick, offering words of hope and support to those in need of comfort. In addition, we donated essential items to help improve their well-being during challenging times.
+                        As part of our community outreach program, Soy United FC visited Likuyani Hospital, Soy Market, and Nangili Market. These visits were more than just gestures of goodwill; they were opportunities for us to connect with the people who support our club and to give back in a tangible way. At the hospital, our players spent time encouraging the sick, offering words of hope and support to those in need. In addition, we donated essential items to help improve their well-being during challenging times.
                     </p>
                     </div>
                 </div>
@@ -208,7 +210,7 @@ function loadContent(newsId) {
                 `;
             break;
             case 'blog2':
-                heroImage.src = './publics/foundation/blog-images/Orphanage4.jpeg'; // Update hero image
+                heroImage.src = './publics/foundation/blog-images/Orphanage4.jpeg'; 
                 content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
@@ -224,7 +226,7 @@ function loadContent(newsId) {
                 <div class="blog-item">
                     <div class="blog-text">
                         <p class="blog-excerpt-1">At Soy United FC, we recognize the importance of nurturing the next generation—not only on the football field but in life. During our visit, we were able to provide essential supplies to help meet the daily needs of the children. From food items to clothing and educational materials, these donations are just one small way we can help ensure that these young ones have the resources they need to thrive.
-                        However, the work doesn't end here. The children of **Harvest of Hope Africa** need continued support, and we encourage anyone who is able to contribute to this noble cause. Whether it’s through donations, volunteering, or simply spreading the word, every little bit makes a difference in the lives of these children. You can get in touch with HOHA's founder, Mr. Fredrick Munuku** at 0705814936  to learn how you can help.
+                        However, the work doesn't end here. The children of **Harvest of Hope Africa** need continued support, and we encourage anyone who is able to contribute to this noble cause. Whether it's through donations, volunteering, or simply spreading the word, every little bit makes a difference in the lives of these children. You can get in touch with HOHA's founder, Mr. Fredrick Munuku** at 0705814936  to learn how you can help.
                         At Soy United FC, we believe in using our platform not only to excel in sports but also to make a meaningful impact in our community. Our visit to the orphanage is a testament to our commitment to uplifting the vulnerable, spreading love, and fostering hope wherever we can. 
 
                         #SoyNiYetu #WillToWin #GivingBack #HopeForTheFuture
@@ -240,7 +242,7 @@ function loadContent(newsId) {
                 `;
                 break;
         case 'blog3':
-            heroImage.src = './publics/foundation/blog-images/WhatsApp Image 2024-08-13 at 23.09.00 (1).jpeg'; // Update hero image
+            heroImage.src = './publics/foundation/blog-images/WhatsApp Image 2024-08-13 at 23.09.00 (1).jpeg'; 
             content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
@@ -292,7 +294,7 @@ function loadContent(newsId) {
             break;
         
             case 'blog4':
-                heroImage.src = './publics/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.15.55 AM.jpg'; // Update hero image
+                heroImage.src = './publics/foundation/blog-images/WhatsApp Image 2024-09-04 at 11.15.55 AM.jpg'; 
                 content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
@@ -343,7 +345,7 @@ function loadContent(newsId) {
                 `;
                 break;
                 case 'blog5':
-            heroImage.src = './publics/foundation/blog-images/mathare1.jpg'; // Update hero image
+            heroImage.src = './publics/foundation/blog-images/mathare1.jpg'; 
             content = `
             <div class="blog-item">
                 <div class="blog-image-1">
@@ -382,30 +384,29 @@ function loadContent(newsId) {
 
 
 
-        // Add more cases for other news items
         default:
-            heroImage.src = './default-hero-image.jpg'; // Default hero image
+            heroImage.src = './default-hero-image.jpg'; 
             content = '<p>No content available.</p>';
     }
 
-        contentArea.innerHTML = content; // Update blog content
+        contentArea.innerHTML = content; 
 }
 
-        // Function to get URL parameters
+      
         function getUrlParameter(name) {
             name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
             const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
             const results = regex.exec(location.search);
-            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+            return results ? decodeURIComponent(results[1].replace(/\+/g, ' ')) : '';
         }
 
-        // Load content based on URL parameter
+     
         document.addEventListener('DOMContentLoaded', function() {
-            const newsId = getUrlParameter('newsId'); // Get the newsId from the URL
+            const newsId = getUrlParameter('newsId');
+            const contentArea = document.getElementById('blog-content');
             if (newsId) {
-                loadContent(newsId); // Call the loadContent function with the newsId
+                loadContent(newsId); 
             } else {
-                // Handle case where no newsId is provided
-                document.getElementById('blog-content').innerHTML = '<p>No content available.</p>';
+                contentArea.innerHTML = '<p>No content available.</p>'; 
             }
 });

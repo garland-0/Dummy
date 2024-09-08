@@ -1,6 +1,3 @@
-
-
-
 /* TEAM */
 
 const playerContainer = document.getElementById('playerContainer');
@@ -16,21 +13,23 @@ const playerData = {
 
 function loadPlayers(category) {
     playerContainer.innerHTML = '';
+    const fragment = document.createDocumentFragment(); // Create a DocumentFragment for batch appending
+
     playerData[category].forEach((player, index) => {
         const playerFrame = document.createElement('div');
         playerFrame.classList.add('player-frame');
         playerFrame.style.animationDelay = `${index * 0.1}s`;
 
         const playerImage = document.createElement('img');
-        playerImage.src = `./publics/team/team-profile/${category}/${player}`; // Updated to use local path
+        playerImage.src = `./publics/team/team-profile/${category}/${player}`;
         playerImage.alt = `${category} ${index + 1}`;
         playerImage.onerror = function() {
-            this.src = './publics/shop3.jpg'; // Fallback to a placeholder image if the original image fails to load
+            this.src = './publics/shop3.jpg';
         };
- 
+
         const playerInfo = document.createElement('div');
         playerInfo.classList.add('player-info');
-        
+
         const playerName = document.createElement('div');
         playerName.classList.add('player-name');
         playerName.textContent = `Player ${index + 1}`;
@@ -38,15 +37,15 @@ function loadPlayers(category) {
         const playerPosition = document.createElement('div');
         playerPosition.classList.add('player-position');
         playerPosition.textContent = category.slice(0, -1).charAt(0).toUpperCase() + category.slice(1, -1);
+        
         playerInfo.appendChild(playerName);
         playerInfo.appendChild(playerPosition);
-
         playerFrame.appendChild(playerImage);
         playerFrame.appendChild(playerInfo);
-        playerContainer.appendChild(playerFrame);
-        playerFrame.appendChild(playerImage);
-        playerContainer.appendChild(playerFrame);
+        fragment.appendChild(playerFrame); // Append to the fragment
     });
+
+    playerContainer.appendChild(fragment); // Append the fragment to the DOM once
 }
 
 navButtons.forEach(button => {
@@ -59,6 +58,3 @@ navButtons.forEach(button => {
 
 // Load goalkeepers by default
 loadPlayers('goalkeepers');
-
-
-

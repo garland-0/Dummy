@@ -21,16 +21,6 @@
     window.addEventListener('load', startSlider);
 
 
-
-
-
-
-
-
-
-
-
-
 /* //POPULAR */
 function adjustImageFrames() {
     const container = document.querySelector('.image-container-pop');
@@ -283,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const itemElement = document.createElement('div');
         itemElement.classList.add('item', 'fade-in');
         itemElement.innerHTML = `
-            <img src="${item.image}" alt="Item from ${item.category}">
+            <img src="${item.image}" alt="Item from ${item.category}" loading="lazy">
             <div class="item-info">
                 <span class="item-name">${item.id}</span>
             </div>
@@ -306,37 +296,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize the shop
     initializeCategories();
 });
-
-
-
-
-
-
-
-
-
-
-
-        /* //FADE IN */
-        // Fade-in animation on scroll
-document.addEventListener('DOMContentLoaded', () => {
-    const fadeInElements = document.querySelectorAll('.fade-in-element');
-    
-    const fadeInOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
-    };
-  
-    const fadeInObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, fadeInOptions);
-  
-    fadeInElements.forEach(element => {
-      fadeInObserver.observe(element);
-    });
-  });
