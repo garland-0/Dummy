@@ -1,14 +1,5 @@
 
-
-
-
-
-
-        /* VIDEO */
-
-
-
-       /*  const playButton = document.querySelector('.play-button');
+        const playButton = document.querySelector('.play-button');
         const videoThumbnail = document.querySelector('.video-thumbnail');
         const video = document.getElementById('myVideo');
 
@@ -34,4 +25,4 @@
 
         video.addEventListener('loadedmetadata', () => {
             video.controls = true;
-        });        */
+        });       
