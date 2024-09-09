@@ -71,7 +71,7 @@ function onYouTubeIframeAPIReady() {
             'fs': 1
         },
         events: {
-            'onReady':onPlayerReady,
+            'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
         }
     });
@@ -82,12 +82,15 @@ function onPlayerStateChange(event) {
         showThumbnail();
     }
 }
-function onPlayerReady(event){
+
+function onPlayerReady(event) {
     resizeVideo();
 }
 
 function showThumbnail() {
-    player.getIframe().style.opacity = '0';
+    if (player && player.getIframe()) {
+        player.getIframe().style.opacity = '0';
+    }
     thumbnail.style.opacity = '1';
     overlay.style.opacity = '1';
     playButton.style.display = 'flex';
@@ -95,7 +98,9 @@ function showThumbnail() {
 
 function showVideo() {
     player.playVideo();
-    player.getIframe().style.opacity = '1';
+    if (player && player.getIframe()) {
+        player.getIframe().style.opacity = '1';
+    }
     thumbnail.style.opacity = '0';
     overlay.style.opacity = '0';
     playButton.style.display = 'none';
@@ -119,19 +124,44 @@ function resizeVideo() {
     }
 
     if (player && player.getIframe()) {
-        const iframe=player.getIframe();
-        iframe.style.width=newWidth +'px';
-        iframe.style.height=newHeight+'px';
-        iframe.style.left='50';
-        iframe.style.top='50';
-        iframe.style.transform='translate(-50%,-50%)';
-        iframe.style.position='position';
+        const iframe = player.getIframe();
+        iframe.style.width = newWidth + 'px';
+        iframe.style.height = newHeight + 'px';
+        iframe.style.left = '50%';
+        iframe.style.top = '50%';
+        iframe.style.transform = 'translate(-50%, -50%)';
+        iframe.style.position = 'absolute';
         
+        // Ensure controls are visible
+        player.setOption('controls', 1);
     }
 }
 
 window.addEventListener('resize', resizeVideo);
-setInterval(resizeVideo, 100); // Call periodically to ensure proper sizing
+
+// Use requestAnimationFrame for smoother resizing
+let resizeRAF;
+function smoothResize() {
+    if (resizeRAF) {
+        cancelAnimationFrame(resizeRAF);
+    }
+    resizeRAF = requestAnimationFrame(resizeVideo);
+}
+
+window.addEventListener('resize', smoothResize);
+
+// Initial resize
+resizeVideo();
+
+// Load YouTube API
+function loadYouTubeAPI() {
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+
+loadYouTubeAPI();
 
 
 
