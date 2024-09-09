@@ -51,7 +51,7 @@ window.addEventListener('resize', adjustImageFrames);
 
 
 /* VIDEO-INTRO */
-const videoContainer = document.querySelector('.video-container-7');
+/* const videoContainer = document.querySelector('.video-container-7');
 const thumbnail = document.querySelector('.thumbnail-7');
 const overlay = document.querySelector('.video-overlay');
 const playButton = document.querySelector('.play-button-7');
@@ -161,7 +161,7 @@ function loadYouTubeAPI() {
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }
 
-loadYouTubeAPI();
+loadYouTubeAPI(); */
 
 
 
