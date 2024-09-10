@@ -171,7 +171,8 @@ function loadContent(newsId) {
                 </div>
                 <div class="blog-item">
                     <div class="blog-text">
-                        <p class="blog-excerpt-1">Community Outreach: A Heartfelt Mission<br>
+                        <h2 class="blog-title-1">Community Outreach: A Heartfelt Mission</h2>
+                        <p class="blog-excerpt-1">
                         As part of our community outreach program, Soy United FC visited Likuyani Hospital, Soy Market, and Nangili Market. These visits were more than just gestures of goodwill; they were opportunities for us to connect with the people who support our club and to give back in a tangible way. At the hospital, our players spent time encouraging the sick, offering words of hope and support to those in need. In addition, we donated essential items to help improve their well-being during challenging times.
                     </p>
                     </div>
@@ -188,6 +189,7 @@ function loadContent(newsId) {
                 </div>
                 <div class="blog-item">
                     <div class="blog-text">
+                        <h2 class="blog-title-1">Cleaning Initiatives: Fighting for a Greener Future</h2>
                         <p class="blog-excerpt-1">In line with our core values, Soy United FC has proudly taken on the role of an environmentally conscious football club. During our visits to the local markets, we rolled up our sleeves and conducted a community clean-up at both Soy Market and Nangili Market. Our goal was simple but powerful: to raise awareness about the importance of maintaining clean public spaces and to inspire others to join us in the fight against pollution.
 
                         Soy United FC is more than just a football team—we are a green club dedicated to environmental preservation and climate action. Our clean-up efforts reflect our deep commitment to protecting the environment and advocating for sustainable practices. By taking these small yet impactful steps, we hope to contribute to a cleaner, healthier planet for future generations.</p>
@@ -195,6 +197,7 @@ function loadContent(newsId) {
                 </div>
                 <div class="blog-item">
                     <div class="blog-text">
+                        <h2 class="blog-title-1">A Call to Action</h2>
                         <p class="blog-excerpt-1">Our mission doesn't end here. We are calling on everyone—fans, community members, and fellow sports teams—to join us in making a difference. Whether through simple acts of kindness or taking part in environmental initiatives, we can all play a role in building a better world. Soy United FC will continue to lead by example, championing the causes that matter most and demonstrating that true greatness lies in service to others and the planet.
 
                         Together, let's embrace the power of  sports, community, and sustainability  to create lasting change!
@@ -220,14 +223,15 @@ function loadContent(newsId) {
                 <div class="blog-item">
                     <div class="blog-text">
                         <h2 class="blog-title-1">Soy United FC: Spreading Love and Hope at Harvest of Hope Africa Orphanage</h2>
-                        <p class="blog-excerpt-1">Mother Teresa, one of the world's greatest humanitarians, once said, _"It's not how much we give but how much love we put into giving."_ This powerful message perfectly reflects our values at Soy United FC, where we believe in the importance of not just giving, but giving with heart and purpose. Guided by our motto, _“Help One To Help Another,”_ we had the incredible opportunity to visit the Harvest of Hope Africa Orphanage (HOHA) in Matayos, Busia County  this past Saturday.Our visit to Harvest of Hope Africa  was not just about donations, but about creating meaningful connections with the children who call this place home. These resilient young souls, who have faced so many challenges in life, welcomed us with open arms and bright smiles. We spent the day engaging in fun activities, sharing stories, and offering words of encouragement and love. The joy and laughter shared that day will forever remain in our hearts..</p>
+                        <p class="blog-excerpt-1">Mother Teresa, one of the world's greatest humanitarians, once said, _"It's not how much we give but how much love we put into giving."_ This powerful message perfectly reflects our values at Soy United FC, where we believe in the importance of not just giving, but giving with heart and purpose. Guided by our motto, _“Help One To Help Another,”_ we had the incredible opportunity to visit the Harvest of Hope Africa Orphanage (HOHA) in Matayos, Busia County  this past Saturday.<br><b>A Day of Compassion and Connection</b>
+                        These resilient young souls, who have faced so many challenges in life, welcomed us with open arms and bright smiles. We spent the day engaging in fun activities, sharing stories, and offering words of encouragement and love. The joy and laughter shared that day will forever remain in our hearts.</p>
                     </div>
                 </div>
                 <div class="blog-item">
                     <div class="blog-text">
-                        <p class="blog-excerpt-1">At Soy United FC, we recognize the importance of nurturing the next generation—not only on the football field but in life. During our visit, we were able to provide essential supplies to help meet the daily needs of the children. From food items to clothing and educational materials, these donations are just one small way we can help ensure that these young ones have the resources they need to thrive.
-                        However, the work doesn't end here. The children of **Harvest of Hope Africa** need continued support, and we encourage anyone who is able to contribute to this noble cause. Whether it's through donations, volunteering, or simply spreading the word, every little bit makes a difference in the lives of these children. You can get in touch with HOHA's founder, Mr. Fredrick Munuku** at 0705814936  to learn how you can help.
-                        At Soy United FC, we believe in using our platform not only to excel in sports but also to make a meaningful impact in our community. Our visit to the orphanage is a testament to our commitment to uplifting the vulnerable, spreading love, and fostering hope wherever we can. 
+                        <h2 class="blog-title-1">Supporting the Next Generation</h2>
+                        <p class="blog-excerpt-1">At Soy United FC, we recognize the importance of nurturing the next generation—not only on the football field but in life. During our visit, we were able to provide essential supplies to help meet the daily needs of the children. From food items to clothing and educational materials, these donations are just one small way we can help ensure that these young ones have the resources they need to thrive.<br><b> A call for Support</b><br>
+                        However, the work doesn't end here. The children of Harvest of Hope Africa need continued support, and we encourage anyone who is able to contribute to this noble cause. Whether it's through donations, volunteering, or simply spreading the word, every little bit makes a difference in the lives of these children. You can get in touch with HOHA's founder, Mr. Fredrick Munuku at 0705814936  to learn how you can help.
 
                         #SoyNiYetu #WillToWin #GivingBack #HopeForTheFuture
 
@@ -258,7 +262,7 @@ function loadContent(newsId) {
                 </div>
                 <div class="blog-item">
                     <div class="blog-text">
-                        <p class="blog-excerpt-1">At Soy United, we believe in giving back to the community. In the spirit of this belief, we donated brand-new jerseys to all participating teams, ensuring every player had the gear they needed to step onto the pitch with confidence. In addition, we supported our female athletes by providing sanitary pads, recognizing the importance of addressing their needs both on and off the field.
+                        <h2 class="blog-title-1">Empowering Our Community</h2><p class="blog-excerpt-1">At Soy United, we believe in giving back to the community. In the spirit of this belief, we donated brand-new jerseys to all participating teams, ensuring every player had the gear they needed to step onto the pitch with confidence. In addition, we supported our female athletes by providing sanitary pads, recognizing the importance of addressing their needs both on and off the field.
                     </p>
                     </div>
                 </div>
@@ -274,13 +278,15 @@ function loadContent(newsId) {
                 </div>
                 <div class="blog-item">
                     <div class="blog-text">
+                        <h2 class="blog-title-1">Honoring Excellence</h2>
                         <p class="blog-excerpt-1">The tournament was filled with incredible performances, and we were proud to reward the best of the best with trophies, cash prizes, and special recognition. These tokens of appreciation were given to inspire our young players to continue pursuing their passion and to celebrate their dedication and hard work.</p>
                     </div>
                 </div>
                 <div class="blog-item">
                     <div class="blog-text">
-                        <p class="blog-excerpt-1">One of the most rewarding aspects of this event was the discovery of new talent. We are excited to announce that several standout players have been invited to join Soy United FC, where they will have the opportunity to hone their skills and compete at a higher level. The Soy United Community Open Tournament was a huge success, and it left a lasting impact on everyone involved. We are already looking forward to next year's event, where we hope to continue building a brighter future for our youth through the power of sports.
-
+                        <h2 class="blog-title-1">Nurturing Future Stars</h2>
+                        <p class="blog-excerpt-1">One of the most rewarding aspects of this event was the discovery of new talent. We are excited to announce that several standout players have been invited to join Soy United FC, where they will have the opportunity to hone their skills and compete at a higher level. <br>
+                        The Soy United Community Open Tournament was a huge success, and it left a lasting impact on everyone involved. We are already looking forward to next year's event, where we hope to continue building a brighter future for our youth through the power of sports.
                         Stay tuned for more updates as we continue to uplift, inspire, and empower our community!
                             </p>
                     </div>
