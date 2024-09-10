@@ -10,17 +10,10 @@
     }
 
     function startSlider() {
-        // Ensure the first image is visible initially
         images[0].classList.add('active');
-        
-        // Change image every 5 seconds
         setInterval(changeImage, 5000);
     }
-
-    // Start the slider when the page loads
     window.addEventListener('load', startSlider);
-
-
 /* //POPULAR */
 function adjustImageFrames() {
     const container = document.querySelector('.image-container-pop');
@@ -46,12 +39,8 @@ function adjustImageFrames() {
 
 window.addEventListener('load', adjustImageFrames);
 window.addEventListener('resize', adjustImageFrames);
-
-
-
-
-/* VIDEO-INTRO */
-/* const videoContainer = document.querySelector('.video-container-7');
+/*VIDEO-INTRO */
+const videoContainer = document.querySelector('.video-container-7');
 const thumbnail = document.querySelector('.thumbnail-7');
 const overlay = document.querySelector('.video-overlay');
 const playButton = document.querySelector('.play-button-7');
@@ -132,14 +121,11 @@ function resizeVideo() {
         iframe.style.transform = 'translate(-50%, -50%)';
         iframe.style.position = 'absolute';
         
-        // Ensure controls are visible
         player.setOption('controls', 1);
     }
 }
 
 window.addEventListener('resize', resizeVideo);
-
-// Use requestAnimationFrame for smoother resizing
 let resizeRAF;
 function smoothResize() {
     if (resizeRAF) {
@@ -150,10 +136,7 @@ function smoothResize() {
 
 window.addEventListener('resize', smoothResize);
 
-// Initial resize
 resizeVideo();
-
-// Load YouTube API
 function loadYouTubeAPI() {
     const tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
@@ -161,7 +144,7 @@ function loadYouTubeAPI() {
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }
 
-loadYouTubeAPI(); */
+loadYouTubeAPI();
 
 
 
@@ -269,8 +252,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const itemContainer = document.getElementById('itemContainer');
 
     let currentCategory = '';
-
-    // Initialize categories
     function initializeCategories() {
         categories.forEach(category => {
             const button = document.createElement('button');
@@ -283,8 +264,6 @@ document.addEventListener('DOMContentLoaded', function() {
             loadCategory(categories[0]);
         }
     }
-
-    // Load category items
     function loadCategory(category) {
         currentCategory = category;
         itemContainer.innerHTML = '';
@@ -297,8 +276,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         updateActiveCategory(category);
     }
-
-    // Create item element
     function createItemElement(item) {
         const itemElement = document.createElement('div');
         itemElement.classList.add('item', 'fade-in');
@@ -310,8 +287,6 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         itemContainer.appendChild(itemElement);
     }
-
-    // Update active category
     function updateActiveCategory(category) {
         const buttons = categoryNav.querySelectorAll('button');
         buttons.forEach(button => {
@@ -322,7 +297,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Initialize the shop
     initializeCategories();
 });
