@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soy United Foundation</title>
-    <link href=./assets/index.css rel="stylesheet">
+    <link href=./public/assets/index.css rel="stylesheet">
 
      
 </head>
@@ -17,7 +17,7 @@
             </div>
             <div class="header-divider"></div>
             <div class="bottom-header">
-                <div class="logo-placeholder-3"><img src="/publics/team/logo-2@2x.jpg" alt="logo"></div>
+                <div class="logo-placeholder-3"><img src="/public/team/logo-2@2x.jpg" alt="logo"></div>
                 <nav>
                     <ul class="nav-menu">
                         <li class="nav-item"><a href="team.html" class="nav-link">LATEST NEWS</a>
@@ -45,7 +45,7 @@
 
 
 
-    <div class="hero-image"><img src="./publics/news/group-3@2x.jpg" alt="Hero Image" ></div>
+    <div class="hero-image"><img src="./public/news/group-3@2x.jpg" alt="Hero Image" ></div>
     <div class="container">
         <div class="toggle-buttons">
             <button class="toggle-button active" data-target="main-content">League Table</button>
@@ -121,7 +121,7 @@
             </form>
         </div>
     </div>
-    <script src="./assets/scripts/animation.js" defer></script>
+    <script src="./public/assets/scripts/animation.js" defer></script>
     <script>
         // Fixture data
         const fixtures = [
@@ -182,7 +182,7 @@
                 row.innerHTML = `
                     <td class="numeric">${team.pos}</td>
                     <td class="team-name">
-                        <img src="./publics/team/logo-2@2x.jpg?text=${team.team[0]}" alt="${team.team} logo" class="team-logo">
+                        <img src="./public/team/logo-2@2x.jpg?text=${team.team[0]}" alt="${team.team} logo" class="team-logo">
                         <span>${team.team}</span>
                     </td>
                     <td class="numeric ">${team.p}</td>
@@ -251,54 +251,7 @@
                 });
             });
 
-            // Contact form popup functionality
-            const contactButton = document.getElementById('contactButton');
-            const contactPopup = document.getElementById('contactPopup');
-            const closePopup = document.querySelector('.close-popup');
-            const contactForm = document.getElementById('contactForm');
-
-            contactButton.addEventListener('click', () => {
-                contactPopup.style.display = 'block';
-            });
-
-            closePopup.addEventListener('click', () => {
-                contactPopup.style.display = 'none';
-            });
-
-            window.addEventListener('click', (event) => {
-                if (event.target === contactPopup) {
-                    contactPopup.style.display = 'none';
-                }
-            });
-
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const message = document.getElementById('message').value;
-
-                fetch('http://localhost:3000/send-email', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ name, email, message }),
-                })
-                .then(response => response.text())
-                .then(result => {
-                    alert('Thank you for your feedback. We will get back to you soon!');
-                    contactPopup.style.display = 'none';
-                    contactForm.reset();
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('There was an error sending your feedback. Please try again later.');
-                });
-            });
         });
-
-        // Example usage of updateLeagueData
-        // updateLeagueData('Chelsea', 'w', 20);
 
     </script>
 </body>
