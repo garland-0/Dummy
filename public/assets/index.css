@@ -351,8 +351,8 @@
   }
     @media (max-width: 480px){
       .text-overlay{
-        font-size: 50px;
-        left:10px;
+        font-size: 3rem;
+        left: 10px;
       }
     }
 
