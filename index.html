@@ -90,9 +90,6 @@
         
     </div>
 
-
-
-
     <footer>
         <div class="footer-top">
             <div class="footer-section">
@@ -128,8 +125,8 @@
         </div>
     </footer> 
   
-    <script defer>
-        document.addEventListener('DOMContentLoaded', () => {
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
         const navLinks = document.querySelectorAll('.nav-link');
@@ -142,7 +139,6 @@
         }
 
         hamburger.addEventListener('click', toggleMenu);
-
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
@@ -150,8 +146,6 @@
                 hamburgerIcon.classList.remove('open');
             });
         });
-
-        // Add animation to menu items
         function addFadeInClass() {
             if (window.innerWidth <= 768) {
                 navLinks.forEach((link, index) => {
@@ -163,11 +157,8 @@
                 });
             }
         }
-
         window.addEventListener('resize', addFadeInClass);
         addFadeInClass();
-
-        // Add this to your existing <style> tag
         const style = document.createElement('style');
         style.textContent = `
             .menu-open {
