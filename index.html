@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latest News</title>
     <link rel="stylesheet" href="./public/assets/index.css">
+
+ 
+        <link rel="preconnect" href="https://fonts.googleapis.com">  
+        <link rel="preconnect" href="https://db.onlinewebfonts.com">  
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+        <link href="https://db.onlinewebfonts.com/c/82aa6b50c1b6e9312181faa59397eff4?family=Chelsea+Chiselled&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">  
+    
 </head>
 <body>
     <header class="header">
@@ -129,41 +138,7 @@
     </footer> 
   
     <script>
- document.addEventListener('DOMContentLoaded', () => {
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const hamburgerIcon = document.querySelector('.hamburger-icon');
-
-        function toggleMenu() {
-            navMenu.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-            hamburgerIcon.classList.toggle('open');
-        }
-
-        hamburger.addEventListener('click', toggleMenu);
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                document.body.classList.remove('menu-open');
-                hamburgerIcon.classList.remove('open');
-            });
-        });
-        function addFadeInClass() {
-            if (window.innerWidth <= 768) {
-                navLinks.forEach((link, index) => {
-                    link.parentElement.style.transitionDelay = `${index * 0.1}s`;
-                });
-            } else {
-                navLinks.forEach(link => {
-                    link.parentElement.style.transitionDelay = '';
-                });
-            }
-        }
-        window.addEventListener('resize', addFadeInClass);
-        addFadeInClass();
-        const style = document.createElement('style');
-        style.textContent = `
+ document.addEventListener("DOMContentLoaded",()=>{const hamburger=document.querySelector(".hamburger");const navMenu=document.querySelector(".nav-menu");const navLinks=document.querySelectorAll(".nav-link");const hamburgerIcon=document.querySelector(".hamburger-icon");function toggleMenu(){navMenu.classList.toggle("active");document.body.classList.toggle("menu-open");hamburgerIcon.classList.toggle("open")}hamburger.addEventListener("click",toggleMenu);navLinks.forEach(link=>{link.addEventListener("click",()=>{navMenu.classList.remove("active");document.body.classList.remove("menu-open");hamburgerIcon.classList.remove("open")})});function addFadeInClass(){if(window.innerWidth<=768){navLinks.forEach((link,index)=>{link.parentElement.style.transitionDelay=`${index*.1}s`})}else{navLinks.forEach(link=>{link.parentElement.style.transitionDelay=""})}}window.addEventListener("resize",addFadeInClass);addFadeInClass();const style=document.createElement("style");style.textContent=`
             .menu-open {
                 overflow: hidden;
             }
@@ -176,9 +151,7 @@
                     display: none !important;
                 }
             }
-        `;
-        document.head.appendChild(style);
-    });
+        `;document.head.appendChild(style)});
     </script>
 
 </body>
