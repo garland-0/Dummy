@@ -2,9 +2,9 @@ const playerContainer = document.getElementById("playerContainer");
 const navButtons = document.querySelectorAll(".nav-btn");
 const playerData = {
     goalkeepers: ["MONIO.jpg", "FRED.webp", "OMUCHE.webp"],
-    defenders: ["PRINCE.webp", "SAM.webp", "STEPHEN.webp", "OJOK.jpg", "OKWEMBA.jpg", "ELVIS.jpg", "OSOI.jpg", "WANYAMA.jpg", "OKIRING.webp"],
-    midfielders: ["BARAZA.jpg", "EMMANUEL.jpg", "LUTTA.jpg", "MAZA.jpg", "ODIRA.jpg", "ONDEKO.jpg", "OSCAR.jpg", "OUMA.jpg", "CHETAMBE.webp", "GERRY.webp", "JOSEPH.webp"],
-    strikers: ["MASAFU.jpg", "OKELLO.jpg", "NZEI.JPG", "SHAMALA.jpg", "WANGAI.jpg", "ERICK.webp", "FELIX.webp", "SIJE.webp"],
+    defenders: ["PRINCE.webp", "SAM.webp", "STEPHEN.webp", "OJOK.jpg", "ELVIS.jpg", "OSOI.jpg", "OKIRING.webp", "SHAMALA.webp",],
+    midfielders: ["BARAZA.jpg", "EMMANUEL.jpg", "MAZA.jpg", "ODIRA.jpg", "ONDEKO.jpg", "OSCAR.jpg", "OUMA.jpg", "CHETAMBE.webp", "GERRY.webp", "JOSEPH.webp"],
+    strikers: ["MASAFU.jpg", "OKELLO.jpg", "NZEI.JPG", "WANGAI.jpg", "ERICK.webp", "FELIX.webp", "SIJE.webp"],
     staff: ["EDWIN.jpg", "BONDIA.jpg", "ISAAC.jpg", "PAUL.jpg", "ATINDI.jpg"]
 };
 
