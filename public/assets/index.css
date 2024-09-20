@@ -584,7 +584,7 @@
     .soy-united p{
       flex-wrap: wrap;
       font-size: 8rem;
-      padding-right: 12%;
+      padding-left: 5%;
     }
   }
 
@@ -622,7 +622,7 @@
     align-items: center;
     color: #ebebeb;
     font-size: 12rem;
-    font-family: 'Poppins';
+    font-family: sans-serif;
     font-weight: 500;
     padding-top: 8%;
 
