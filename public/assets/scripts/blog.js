@@ -111,19 +111,93 @@ function loadContent(newsId) {
                 </div>
             `;
             break;
-        case 'news4':
-            heroImage.src = './path-to-hero-image-2.jpg'; 
+            case 'news4':
+            heroImage.src = './public/news/news-blog/day2.jpeg';
             content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
-                        <img src="./path-to-image-2.jpg" alt="Blog Image 2">
-                    </div>
-                    <div class="blog-text">
-                        <h2 class="blog-title-1">Injury Update</h2>
-                        <p class="blog-excerpt-1">Details about the injury update...</p>
+                        <img src="./public/news/news-blog/soyy2.jpeg" alt="Blog Image 1">
                     </div>
                 </div>
-            `;
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <h2 class="blog-title-1"> A Journey of Passion, Perseverance, and Progress</h2>
+                        <p class="blog-excerpt-1">Reflecting on 8th  Incredible Years of Soy United FC
+
+                            On September 21st, 2024, the Soy United FC family, community, and passionate fans gathered at our beloved home ground in Ivugwi to celebrate a significant milestone—our 8th anniversary. The day was nothing short of magical, as it was filled with joy, excitement, and deep reflection on the remarkable journey we’ve been on.
+
+                            From thrilling victories to overcoming tough challenges, each moment has shaped us into the strong team we are today. This celebration wasn’t just about the years gone by—it was about the future that lies ahead, built on the dedication and passion of every single person involved with the club.
+
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <h2 class="blog-title-1">A Special Thanks to Those Who Made It Possible</h2>
+                        <p class="blog-excerpt-1">
+                        We want to extend our deepest gratitude to those who have been at the heart of Soy United’s success. First and foremost, to <b>Bramwel Karamoja</b> and <b>Allan Wanga</b> -your unwavering support and commitment have been the heartbeat of this team. You’ve always made time for us, and for that, we are forever thankful.
+
+                        A huge shoutout goes to <b>Samitsi Football Club</b> for being part of our celebration and adding extra energy to the day’s festivities. Your presence elevated the event, making it one we’ll remember for years to come.
+                    </p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./public/news/news-blog/day1.jpeg" alt="Blog Image 2">
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./public/news/news-blog/soyy4.jpeg" alt="Blog Image 1">
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <h2 class="blog-title-1">Acknowledging Our Leaders and Supporters</h2>
+                        <p class="blog-excerpt-1">We also wish to thank the local political leaders, led by <b>Hon. Innocent Mugabe</b>, MP of Lugari Constituency, ,<b>Hon. Nabwera Nabii</b>, and <b>MCA Hon. Brian Mafunga</b>, for their unwavering support. Not only did they join us on this special day, but they also pledged their backing for our dream of developing a new soccer stadium within Likuyani Constituency. Your belief in our vision gives us the strength to push forward and dream bigger.</p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <h2 class="blog-title-1">A Call to Action</h2>
+                        <p class="blog-excerpt-1">Our mission doesn't end here. We are calling on everyone—fans, community members, and fellow sports teams—to join us in making a difference. Whether through simple acts of kindness or taking part in environmental initiatives, we can all play a role in building a better world. Soy United FC will continue to lead by example, championing the causes that matter most and demonstrating that true greatness lies in service to others and the planet.
+
+                        Together, let's embrace the power of  sports, community, and sustainability  to create lasting change!
+
+                        To Our Loyal Fans: You Are the Soul of Soy United FC
+
+                        None of this would be possible without you—our loyal fans. For eight incredible years, your passion, love, and support have been the fuel that drives us. Whether we win or lose, you have stood by us, and for that, we are eternally grateful. Your unwavering loyalty is the reason we continue to push for greatness.
+
+
+                            </p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./public/news/news-blog/day3.jpeg" alt="Blog Image 2">
+                    </div>
+                </div>
+                 <div class="blog-item">
+                    <div class="blog-image-1">
+                        <img src="./public/news/news-blog/soyy3.jpeg" alt="Blog Image 1">
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <h2 class="blog-title-1"> Exciting Announcements: A New Chapter Begins</h2>
+                        <p class="blog-excerpt-1">As we look toward the future, we’re thrilled to announce the launch of  our MPESA Till Number: 4778384, allowing you to directly support the team as we continue to grow and reach new heights.
+
+                        Looking Ahead: The Best Is Yet to Come
+
+                        As we reflect on the last eight years, it’s been a humbling and rewarding journey. Watching Soy United grow from a small village team into a football club with a proud following and a bright future is something truly special. But this is just the beginning. With your continued support, we look forward to many more victories, celebrations, and unforgettable moments.
+
+                        Together, we’ll keep building something extraordinary. Soy ni Yetu—Soy is Ours. May God continue to bless Soy United Football Club!
+
+                        #WillToWin #SoyUnitedAt8 #ForeverUnited #FootballJourney #StillNdogoYetStrong #SoyNiYetu
+
+
+                    </div>
+                </div>
+                `;
             break;
         case 'news5':
             heroImage.src = './path-to-hero-image-2.jpg'; 

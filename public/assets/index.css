@@ -602,11 +602,12 @@
       height: 60vh;
     }
     .soy-united p{
-      flex-wrap: wrap;
+      display: none;
+      /* flex-wrap: wrap;
       font-size: 5rem;
       padding-right: 12%;
       padding-top: 25%;
-      padding-left: 5%;
+      padding-left: 5%; */
     }
     
   }
