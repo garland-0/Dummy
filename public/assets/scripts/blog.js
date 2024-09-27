@@ -116,7 +116,7 @@ function loadContent(newsId) {
             content = `
                 <div class="blog-item">
                     <div class="blog-image-1">
-                        <img src="./public/news/news-blog/soyy2.jpeg" alt="Blog Image 1">
+                        <img src="./public/news/news-blog/day1.jpeg" alt="Blog Image 1">
                     </div>
                 </div>
                 <div class="blog-item">
@@ -142,7 +142,7 @@ function loadContent(newsId) {
                 </div>
                 <div class="blog-item">
                     <div class="blog-image-1">
-                        <img src="./public/news/news-blog/day1.jpeg" alt="Blog Image 2">
+                        <img src="./public/news/news-blog/day5.jpeg" alt="Blog Image 2">
                     </div>
                 </div>
                 <div class="blog-item">
