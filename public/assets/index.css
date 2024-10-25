@@ -1460,6 +1460,11 @@
     margin-bottom: 20px;
   }
 
+  .highlight {
+    background-color: var(--primary-color); /* Change this color as needed */
+    color: rgb(255, 255, 255); /* Ensure text is readable */
+}
+
   .toggle-button {
     padding: 10px 15px;
     margin-right: 10px;

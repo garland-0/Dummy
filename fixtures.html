@@ -20,7 +20,7 @@
             </div>
             <div class="header-divider"></div>
             <div class="bottom-header">
-                <div class="logo-placeholder-3"><img src="/public/team/logo-2@2x.jpg" alt="logo"></div>
+                <div class="logo-placeholder-3"><img src="./public/team/logo-2@2x.jpg" alt="logo"></div>
                 <nav>
                     <ul class="nav-menu">
                         <li class="nav-item"><a href="team.html" class="nav-link">LATEST NEWS</a>
@@ -92,19 +92,14 @@
                     <table>
                         <thead>
                             <tr>
-                                <th colspan="7">October 2024</th>
+                                <th colspan="7" id="calendar-month">October 2024</th>
                             </tr>
                             <tr>
                                 <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr>
-                            <tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr>
-                            <tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
-                            <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr>
-                            <tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr>
-                            <tr><td>30</td><td>31</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tbody id="calendar-body">
+                            <!-- Calendar days will be populated here -->
                         </tbody>
                     </table>
                 </div>
@@ -278,6 +273,53 @@
             });
 
         });
+
+
+
+
+        // Function to update the calendar
+        function updateCalendar() {
+                    const now = new Date();
+                    const month = now.getMonth(); // Current month (0-11)
+                    const year = now.getFullYear(); // Current year
+                    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                    
+                    // Update the month display
+                    document.getElementById('calendar-month').textContent = `${monthNames[month]} ${year}`;
+                    
+                    // Clear previous dates
+                    const calendarBody = document.getElementById('calendar-body');
+                    calendarBody.innerHTML = '';
+
+                    // Calculate the first day of the month and number of days
+                    const firstDay = new Date(year, month, 1).getDay();
+                    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+                    // Create the calendar rows
+                    let row = document.createElement('tr');
+                    for (let i = 0; i < firstDay; i++) {
+                        row.appendChild(document.createElement('td'));
+                    }
+                    for (let day = 1; day <= daysInMonth; day++) {
+                        const cell = document.createElement('td');
+                        cell.textContent = day;
+
+                        // Highlight the current date
+                        if (day === now.getDate() && month === now.getMonth() && year === now.getFullYear()) {
+                            cell.classList.add('highlight');
+                        }
+
+                        row.appendChild(cell);
+                        if ((day + firstDay) % 7 === 0) {
+                            calendarBody.appendChild(row);
+                            row = document.createElement('tr');
+                        }
+                    }
+                    calendarBody.appendChild(row);
+                }
+
+                // Call the function to update the calendar on page load
+                document.addEventListener('DOMContentLoaded', updateCalendar);
 
     </script>
 </body>
